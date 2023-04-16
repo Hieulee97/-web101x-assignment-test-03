@@ -1,2 +1,16 @@
-@media (max-width: 1200px) and (min-width: 577px) {
+@media only screen and (max-device-width: 576px) and (min-device-width: 320px) {
+  /* Begin: Responsive Selector */
+  #navbar-lap {
+    display: none;
+  }
+
+  #navbar-tablet {
+    display: none;
+  }
+
+  #navbar-mobile {
+    display: block;
+  }
+
+  /* End: Responsive Selector */
 }

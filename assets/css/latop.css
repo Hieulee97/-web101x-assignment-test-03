@@ -15,13 +15,53 @@ html {
 }
 
 /* End: CSS for HTML  */
-/* Begin: CSS helper class */
+/* Begin: CSS helper Selector */
 
 .hlt-img-blur {
   filter: contrast(0.5);
 }
-/* End: CSS helper class */
-/* Begin: CSS main class */
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.bg-light-gray {
+  background-color: var(--color-ligt-gray);
+}
+
+.bg-brown-gray {
+  background-color: var(--color-brown-gray);
+}
+
+.list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* End: CSS helper Selector */
+/* Begin: Responsive Selector */
+#navbar-lap {
+  display: block;
+}
+
+#navbar-tablet {
+  display: none;
+}
+
+#navbar-mobile {
+  display: none;
+}
+
+.hlt-w-22 {
+  width: 22.5%;
+}
+
+.hlt-w-10 {
+  width: 10%;
+}
+
+/* End: Responsive Selector */
+/* Begin: CSS main Selector */
+
 .personal-avatar {
   left: 50%;
   transform: translateX(-50%);
@@ -36,4 +76,4 @@ html {
   height: 100%;
   border-radius: 999px;
 }
-/* End: CSS main class */
+/* End: CSS main Selector */

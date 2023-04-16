@@ -1,2 +1,38 @@
-@media (max-width: 576px) {
+@media only screen and (max-device-width: 1200px) and (min-device-width: 961px) {
+  /* Begin: CSS helper Selector */
+  /* End: CSS helper Selector */
+  /* Begin: Responsive Selector */
+  #navbar-lap {
+    display: none;
+  }
+
+  #navbar-tablet {
+    display: block;
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+
+  /* End: Responsive Selector */
+}
+
+@media only screen and (max-device-width: 961px) and (min-device-width: 577px) {
+  /* Begin: Responsive Selector */
+  #navbar-lap {
+    display: none;
+  }
+
+  #navbar-tablet {
+    display: block;
+  }
+
+  #navbar-mobile {
+    display: none;
+  }
+
+  .text-md-1 {
+    font-size: 13px;
+  }
+  /* End: Responsive Selector */
 }
