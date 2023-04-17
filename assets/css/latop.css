@@ -7,7 +7,7 @@
   --color-gray: #e9e9e9;
   --color-ligt-gray: #e8e9e9;
   --color-brown-gray: #e2e2e2;
-  --color-text-blue: #005eff;
+  --color-text-blue: #0d6efd;
 }
 
 html {
@@ -33,10 +33,53 @@ html {
   background-color: var(--color-brown-gray);
 }
 
+.info-wrapper {
+  border: 1px solid var(--color-gray);
+  height: 100%;
+}
+
 .list-style-none {
   list-style-type: none;
   padding-left: 0;
 }
+
+ul.hlt-lst-dashed {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  word-wrap: break-word;
+}
+
+ul.hlt-lst-dashed > li:before {
+  display: inline-block;
+  content: "-";
+  width: 1em;
+  margin-left: -1em;
+}
+ul.hlt-lst-disc-blue {
+  list-style: none; /* Remove default bullets */
+  position: relative;
+}
+
+ul.hlt-lst-disc-blue > li::before {
+  content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background-color: var(--color-text-blue); /* Change the color */
+  border: 3px solid whitesmoke;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 14px; /* Also needed for space (tweak if needed) */
+  height: 14px;
+  border-radius: 999px;
+  margin-left: -1.5rem; /* Also needed for space (tweak if needed) */
+}
+
+.hlt-rounded-4 {
+  border-radius: 10px;
+}
+
+.hlt-mw-400 {
+  min-width: 400px;
+}
+
 /* End: CSS helper Selector */
 /* Begin: Responsive Selector */
 #navbar-lap {
@@ -48,6 +91,22 @@ html {
 }
 
 #navbar-mobile {
+  display: none;
+}
+
+section#about-tap-lab {
+  display: block;
+}
+
+section#about-mobile {
+  display: none;
+}
+
+section#job-info-lap-mobile {
+  display: block;
+}
+
+section#job-info-tablet {
   display: none;
 }
 
@@ -75,5 +134,45 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 999px;
+}
+
+.hobby-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  border: 2px solid var(--color-text-blue);
+}
+
+/* Skill Style */
+
+.skill-point {
+  border-radius: 999px;
+  background-color: var(--color-text-blue);
+  height: 4px;
+  width: 54px;
+}
+
+.skill-point.point-none {
+  background-color: var(--color-ligt-gray);
+}
+.info-title:hover > .btn-info-show {
+  display: block;
+}
+.btn-info-show {
+  display: none;
+  top: 118px;
+  left: 48px;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 999px;
+}
+
+.jobs-info-details {
+  display: none;
+}
+
+.jobs-info-details.hlt-show {
+  display: block;
 }
 /* End: CSS main Selector */

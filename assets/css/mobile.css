@@ -12,5 +12,16 @@
     display: block;
   }
 
+  section#about-tap-lab {
+    display: none;
+  }
+
+  section#about-mobile {
+    display: block;
+  }
+
   /* End: Responsive Selector */
+  /* Begin: Main Selector */
+
+  /* End: Main Selector */
 }
