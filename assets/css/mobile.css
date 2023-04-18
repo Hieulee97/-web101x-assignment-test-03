@@ -12,14 +12,21 @@
     display: block;
   }
 
-  section#about-tap-lab {
-    display: none;
+  .hlt-ms-auto {
+    margin-left: 0;
   }
 
-  section#about-mobile {
-    display: block;
+  .hlt-me-auto {
+    margin-right: 0;
   }
 
+  .hlt-bbot-primary {
+    border-bottom: 1px solid var(--color-primary);
+  }
+
+  .hlt-bleft-primary {
+    border-left: 0;
+  }
   /* End: Responsive Selector */
   /* Begin: Main Selector */
 

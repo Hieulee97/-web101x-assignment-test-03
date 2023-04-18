@@ -184,11 +184,10 @@
     <!-- End: Navbar Mobile View -->
     <!-- End: Navbar -->
     <!-- Begin: About -->
-    <!-- Begin: About Laptop and Tablet view -->
-    <section id="about-tap-lab" class="bg-grey">
+    <section id="about" class="bg-grey">
       <div class="row">
         <div class="col-sm-6 bg-light-gray pt-5 pb-5">
-          <div id="target" class="ms-auto w-75 pt-5 ps-3">
+          <div id="target" class="hlt-ms-auto w-75 pt-5 ps-3">
             <h1 class="section-title pt-2 pb-2 h3">Mục tiêu nghề nghiệp</h1>
             <p>
               Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
@@ -200,85 +199,73 @@
           </div>
         </div>
         <div class="col-sm-6 bg-brown-gray pt-5 pb-5">
-          <div id="personal-info" class="me-auto w-75 pt-5 ps-3">
+          <div id="personal-info" class="hlt-me-auto w-75 pt-5 ps-3">
             <h1 class="section-title pt-2 pb-2 h3">Thông tin cá nhân</h1>
-            <ul class="info list-style-none">
-              <li><span>Giới tính</span> : Nam</li>
-              <li><span>Ngày sinh</span> : 19/05/2000</li>
-              <li><span>Điện thoại</span> : (+84) 912398xxx</li>
-              <li><span>Email</span> : sinhvien@funix.edu.vn</li>
-              <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
-              <li><span>Website</span> : https://abc.tech</li>
-            </ul>
-            <p class="text-2 pt-2">
-              <a href="#" class="text-decoration-none"
-                ><i class="icon-twitter text-primary"></i></a
-              ><a href="#" class="text-decoration-none"
-                ><i class="icon-facebook text-primary"></i></a
-              ><a href="#" class="text-decoration-none"
-                ><i class="icon-gplus text-primary"></i></a
-              ><a href="#" class="text-decoration-none">
-                <i class="icon-linkedin text-primary"></i>
-              </a>
-            </p>
+            <div class="info-detail hlt-hide">
+              <ul class="info list-style-none">
+                <li><span>Giới tính</span> : Nam</li>
+                <li><span>Ngày sinh</span> : 21/01/1997</li>
+                <li><span>Điện thoại</span> : (+84) 703558982</li>
+                <li><span>Email</span> : hieulee.mk47@gmail.com</li>
+                <li>
+                  <span>Địa chỉ</span> : 33A, ngõ 90, phố Hoàng Như Tiếp, Bồ Đề,
+                  quận Long Biên, Hà Nội
+                </li>
+                <li><span>Website</span> : https://github.com/Hieulee97</li>
+              </ul>
+              <p class="text-2 pt-2">
+                <a href="#" class="text-decoration-none"
+                  ><i class="icon-twitter text-primary"></i></a
+                ><a href="#" class="text-decoration-none"
+                  ><i class="icon-facebook text-primary"></i></a
+                ><a href="#" class="text-decoration-none"
+                  ><i class="icon-gplus text-primary"></i></a
+                ><a href="#" class="text-decoration-none">
+                  <i class="icon-linkedin text-primary"></i>
+                </a>
+              </p>
+            </div>
+            <div class="info-res-form">
+              <form action="">
+                <div class="mb-3">
+                  <label for="inpEmailAdress" class="form-label"
+                    >Vui lòng điền địa chỉ email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inpEmailAdress"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  onclick="onSummitEmail(event)"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End: About Laptop and Tablet view -->
-    <!-- Begin: About Moblie view -->
-    <section id="about-mobile" class="bg-grey">
-      <div class="row">
-        <div class="col-sm-6 bg-light-gray pt-5 pb-5">
-          <div id="target" class="pt-5 ps-3 pe-3">
-            <h1 class="section-title pt-2 pb-2 h3">Mục tiêu nghề nghiệp</h1>
-            <p>
-              Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
-              của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
-              <b>Java Backend Developer</b>, có thể vận dụng những kiến thức đã
-              được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
-              như hoàn thành tốt nhất công việc được giao.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 bg-brown-gray pt-5 pb-5">
-          <div id="personal-info" class="pt-5 ps-3 pe-3">
-            <h1 class="section-title pt-2 pb-2 h3">Thông tin cá nhân</h1>
-            <ul class="info list-style-none">
-              <li><span>Giới tính</span> : Nam</li>
-              <li><span>Ngày sinh</span> : 19/05/2000</li>
-              <li><span>Điện thoại</span> : (+84) 912398xxx</li>
-              <li><span>Email</span> : sinhvien@funix.edu.vn</li>
-              <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
-              <li><span>Website</span> : https://abc.tech</li>
-            </ul>
-            <p class="text-2 pt-2">
-              <a href="#" class="text-decoration-none"
-                ><i class="icon-twitter text-primary"></i></a
-              ><a href="#" class="text-decoration-none"
-                ><i class="icon-facebook text-primary"></i></a
-              ><a href="#" class="text-decoration-none"
-                ><i class="icon-gplus text-primary"></i></a
-              ><a href="#" class="text-decoration-none">
-                <i class="icon-linkedin text-primary"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End: About Moblie view -->
     <!-- End: About -->
     <!-- Begin: Job Info -->
     <!-- Begin: Job Info Laptop and Mobile View -->
     <section id="job-info-lap-mobile" class="pt-5 pb-5">
       <div class="container">
         <div class="row g-4">
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Kinh nghiệm</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Kinh nghiệm</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -316,8 +303,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -372,11 +359,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Học vấn</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Học vấn</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -411,8 +398,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -447,11 +434,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Hoạt động</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Hoạt động</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -489,8 +476,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -520,11 +507,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Sở thích</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Sở thích</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -568,8 +555,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -781,11 +768,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Ngôn ngữ</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Ngôn ngữ</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -820,8 +807,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -840,11 +827,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 hlt-mw-400">
+          <div class="col-md-4 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Kỹ năng</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Kỹ năng</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -897,8 +884,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -937,11 +924,11 @@
     <section id="job-info-tablet" class="pt-5 pb-5">
       <div class="container">
         <div class="row g-4">
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Kinh nghiệm</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Kinh nghiệm</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -979,8 +966,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1035,11 +1022,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Học vấn</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Học vấn</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -1074,8 +1061,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1110,11 +1097,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Hoạt động</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Hoạt động</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -1152,8 +1139,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1183,11 +1170,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Sở thích</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Sở thích</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -1231,8 +1218,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1444,11 +1431,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Ngôn ngữ</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Ngôn ngữ</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -1483,8 +1470,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1503,11 +1490,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 hlt-mw-400">
+          <div class="col-sm-6 hlt-mw-1">
             <div class="p-2 info-wrapper">
               <div class="row position-relative info-title">
                 <div class="col-9 p-5 d-flex align-items-center">
-                  <h2 class="m-0 pt-4 pb-4">Kỹ năng</h2>
+                  <h2 class="m-0 pt-4 pb-4 h3">Kỹ năng</h2>
                 </div>
                 <div
                   class="col-3 pt-5 pb-5 d-flex align-items-center text-center"
@@ -1560,8 +1547,8 @@
                   </svg>
                 </div>
                 <button class="btn-info-show position-absolute fs-4 bg-warning">
-                  <i class="fa-solid fa-caret-down" style="color: #000000"></i
-                  >View More
+                  <i class="fa-solid fa-caret-down" style="color: #000000"></i>
+                  View More
                 </button>
               </div>
               <div class="row ps-5 pe-1 jobs-info-details">
@@ -1596,12 +1583,147 @@
       </div>
     </section>
     <!-- End: Job Info Tablet View -->
-    <section id="certificate" class="bg-grey">
+    <!-- End: Job Info -->
+    <!-- Begin: Certificate -->
+    <!-- Begin: Certificate Latop Mobile view-->
+    <section id="certificate-lap-mobile" class="bg-grey">
       <div class="container">
-        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <h2 class="section-title h3 pt-2 pb-4">Chứng chỉ - Giải thưởng</h2>
+        <div class="row pb-3">
+          <div class="col-sm-6 hlt-bbot-primary">
+            <div class="row py-4">
+              <div class="col-sm-6 ps-2">
+                <img
+                  src="assets/images/Cert_WEB.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="col-sm-6">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row py-4 hlt-bbot-primary">
+              <div class="col-sm-6 ps-2 hlt-bleft-primary">
+                <img
+                  src="assets/images/Cert_PRF.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="col-sm-6">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH JAVACRIPT - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row py-4">
+              <div class="col-sm-6 ps-2">
+                <img
+                  src="assets/images/Cert_PRF.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="col-sm-6">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH JAVACRIPT - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
+    <!-- End: Certificate Latop Mobile view-->
+    <!-- Begin: Certificate Tablet view-->
+    <section id="certificate-tablet" class="bg-grey">
+      <div class="container">
+        <h2 class="section-title h3 pt-2 pb-4">Chứng chỉ - Giải thưởng</h2>
+        <div class="row pb-3">
+          <div class="col-sm-6 hlt-bbot-primary">
+            <div class="row py-4">
+              <div class="row ps-2">
+                <img
+                  src="assets/images/Cert_WEB.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="row ps-4">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row py-4 hlt-bbot-primary">
+              <div class="row ps-2 hlt-bleft-primary">
+                <img
+                  src="assets/images/Cert_PRF.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="row ps-4 hlt-bleft-primary">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH JAVACRIPT - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row py-4">
+              <div class="row ps-2">
+                <img
+                  src="assets/images/Cert_PRF.png"
+                  alt="certificate"
+                  class="d-block img-fluid"
+                />
+              </div>
+              <div class="row ps-4">
+                <h3 class="fs-6 pt-2 pb-3 text-uppercase">
+                  CHỨNG CHỈ LẬP TRÌNH JAVACRIPT - FUNIX
+                </h3>
+                <ul class="hlt-lst-dashed text-3">
+                  <li>Chứng chỉ thuộc chương trình CCDN</li>
+                  <li>GPA: 8.0</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End: Certificate Tablet view-->
+    <!-- End: Certificate -->
     <section id="project">
       <div class="container">
         <h1 class="section-title">Dự án</h1>

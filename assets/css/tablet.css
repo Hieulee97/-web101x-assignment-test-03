@@ -21,6 +21,14 @@
   section#job-info-tablet {
     display: block;
   }
+
+  section#certificate-lap-mobile {
+    display: none;
+  }
+
+  section#certificate-tablet {
+    display: block;
+  }
   /* End: Responsive Selector */
 }
 
@@ -47,6 +55,14 @@
   }
 
   section#job-info-tablet {
+    display: block;
+  }
+
+  section#certificate-lap-mobile {
+    display: none;
+  }
+
+  section#certificate-tablet {
     display: block;
   }
   /* End: Responsive Selector */
